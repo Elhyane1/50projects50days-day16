@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+body{
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.big{
+    height: 300px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.glass{
+    border: 3px solid blue;
+    border-bottom-left-radius: 30% 20%;
+    border-bottom-right-radius: 30% 20%;
+    overflow: hidden;
+}
+
+.full{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: dodgerblue;
+    font-size: 20px;
+    height: 0%;
+    transition: all .5s ease;
+    overflow: hidden;
+}
+.remained{
+    height: 100%;
+    color: blue;
+    background-color: white;
+    transition: height .5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini_glasses{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.mini{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.mini.full{
+    background-color: dodgerblue;
+    color: white;
+}
